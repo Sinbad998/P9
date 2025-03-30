@@ -21,6 +21,3 @@ githubBtn.forEach(function(button) {
   };
 });
 
-
-
-/*Form*/
