@@ -91,6 +91,9 @@ section{
     width: 100%;
     position: relative;
 }
+p{
+    font-size: 14px;
+}
 .about{
     display: flex;
     align-items: center;
@@ -256,6 +259,7 @@ section{
 .project-card img{
     width: 320px;
     border-radius: 16px;
+    height: 156px;
 }
 .project-card:hover .btn{
     border: 2px solid white;
