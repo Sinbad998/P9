@@ -19,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 80px;
-    background-color: lightslategray;
+    background-color: black;
     backdrop-filter: blur(8px);
     color: white;
     padding: 8px 24px;
@@ -70,7 +70,7 @@ li a:hover::before{
     color: white;
     cursor: pointer;
     text-wrap: nowrap;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
 }
 .visit-btn:hover{
@@ -137,6 +137,12 @@ p{
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.btn-group-projects{
+    margin-left: 80px;
+    /* margin: 80px; */
+    margin-right: 80px;
+    margin-top: 35px;
 }
 .btn{
     border-radius: 48px;
@@ -379,14 +385,28 @@ footer ul li a{
         display: none;
     }
     .about-container{
-        flex-direction: column;
+        flex-direction: row;
     }
-    section{
-        min-height: 600px;
+    .about img{
+        width: 300px;
     }
+    #about {
+        margin-top: 60px;
+    }
+    section {
+        min-height: 400px;
+        padding: 20px;
+    }
+    .grid-card{
+        width: 600px;
+    }
+    .project-card img {
+        width: 275px;
+        border-radius:16px;
+        height: 163px;
+      }
     .input-box input{
-        padding: 16px 32px;
-        font-size: 28.8px;
+        width: 600px;
     }
     .input-box input::placeholder{
         font-size: 24px;
@@ -398,7 +418,16 @@ footer ul li a{
         grid-template-columns: repeat(1,1fr);
     }
     .experience-info img{
-        width: 1344px;
+        display: none;
+    }
+    .experience-info p{
+        font-size: 17px;
+    }
+    .grid-card i {
+        font-size: 32px;
+    }
+    .grid-card span {
+        font-size: 31px;
     }
 }
 
@@ -426,6 +455,11 @@ footer ul li a{
     }
     .nav-links.active{
         display: block;
+        background-color: black;
+        opacity: 80%;
+    }
+    li a{
+        font-size: 20px;
     }
     header{
         padding: 16px 80px;
@@ -434,8 +468,54 @@ footer ul li a{
     header .logo{
         font-size: 24px;
     }
+    section {
+        min-height: 300px;
+        padding:0px;
+        width: 100%;
+        position: relative;
+    }
+    #about {
+        margin-top: 59px;
+    }
+    .about .about-container {
+        flex-direction: row-reverse;
+        margin:30px;
+    }
     .about-container img{
-        width: 1536px;
+        width: 150px;
+    }
+    .btn{
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .text h1{
+        font-size: 32px;
+    }
+    .text h3{
+        font-size: 20px;
+    }
+    .text span{
+        font-size: 26px;
+    }
+    .experience-info {
+        padding:30px;
+    }
+    .experience-info p{
+        font-size: 16px;
+    }
+    .grid-card span{
+        font-size: 26px;
+    }
+    .experience-info img{
+        display: none;
+    }
+    .projects-grid {
+        padding:30px;
+    }
+    .project-card img {
+        width: 400px;
+        border-radius:16px;
+        height: 206px;
     }
     .input-box input{
         padding: 8px 48px;
