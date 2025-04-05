@@ -517,4 +517,10 @@ footer ul li a {
     footer ul {
         gap: 16px;
     }
+
+    @media(max-width:600px){
+        .about-container img {
+            display: none;
+        }
+    }
 }
